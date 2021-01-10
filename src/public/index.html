@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 1</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.css">
+</head>
+<body>
+        <div class="container">
+            <h1 class="text-center pt-5">Parcial Programacion 2</h1>
+            <div class="row pt-3">
+                <div class="p-2 d-flex">
+                    <img src="https://www.laguiadelvaron.com/wp-content/uploads/2019/07/portadas-pel%C3%ADculas-iguales-www.laguiadelvaron-16.jpg"
+                        class="rounded img-fluids mx-auto d-block" width="20%" alt="first-movie">
+                    <img src="https://m.guiadelocio.com/var/guiadelocio.com/storage/images/cine/archivo-peliculas/sonic-la-pelicula/37474353-10-esl-ES/sonic-la-pelicula.jpg"
+                        class="rounded img-fluids mx-auto d-block" width="20%" alt="first-movie">
+                    <img src="https://ep00.epimg.net/elpais/imagenes/2017/12/13/album/1513166327_044213_1513268842_album_normal.jpg"
+                        class="rounded img-fluids mx-auto d-block" width="20%" alt="first-movie">
+                    <img src="https://innovoplazaduitama.com/wp-content/uploads/2020/03/bloodshot.jpg"
+                        class="rounded img-fluids mx-auto d-block" width="20%" alt="first-movie">
+                </div>
+            </div>
+            <div class="d-flex"></div>
+                <div class="col-md-6">
+                    <h3 class="pt-5">Select</h3>
+                    <div class="row">
+                        <form id="stack1">
+                            <div class="d-flex p-2">
+                                <div class="form-group p-1">
+                                    <label for="ControlSelect1">Movies</label>
+                                    <select class="form-control" id="movies">
+                                        <option>X-MEN - Dark Phoenix</option>
+                                        <option>SONIC</option>
+                                        <option>STAR WARS - The Force Awakens</option>
+                                        <option>BLOODSHOT</option>
+                                    </select>
+                                </div>
+                                <div class="form-group p-1">
+                                    <label for="ControlSelect2">Category</label>
+                                    <select class="form-control" id="category">
+                                        <option>2D</option>
+                                        <option>3D</option>
+                                        <option>VIP</option>
+                                    </select>
+                                </div>
+                                <div class="form-group p-1 col-md-2">
+                                    <label for="ControlInput1">Quantity</label>
+                                    <input type="number" class="form-control" id="quantity" placeholder="0">
+                                </div>
+                            </div>
+                            <h3>Payments</h3>
+                            <div class="d-flex p-2">
+                                <div class="form-group p-1">
+                                    <label for="ControlInput2">Number</label>
+                                    <input type="number" class="form-control" id="numbercc" placeholder="xxxx-xxxx-xxxx-xxxx">
+                                </div>
+                                <div class="form-group p-1 col-md-2">
+                                    <label for="ControlInput3">CVV</label>
+                                    <input type="number" class="form-control" id="cvvcc" placeholder="123">
+                                </div>
+                                <div class="form-group p-1">
+                                    <label for="ControlInput4">Date</label>
+                                    <div class="d-flex">
+                                        <input type="number" class="form-control col-md-3" id="monthcc" placeholder="01">
+                                        <input type="number" class="form-control col-md-3" id="yearcc" placeholder="20">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group p-1">
+                                    <select class="form-control m-4" id="reserve">
+                                        <option>Instant Purchase</option>
+                                        <option>Reserve</option>
+                                    </select>
+                                    <button class="btn-primary ml-4 mt-4" type="submit">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="btn-primary ml-3" id="getlist">Lists</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/jquery-3.2.1.js"></script>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>
